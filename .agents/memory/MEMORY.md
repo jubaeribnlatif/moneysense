@@ -1,0 +1,1 @@
+- [Sponsored placement boundary](money-sense-sponsored-placement.md) — Paid visibility must never change suitability, match results, scores, comparisons, or editorial guidance.
