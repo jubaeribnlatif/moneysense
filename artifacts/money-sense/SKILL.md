@@ -21,14 +21,16 @@ templates to copy. See docs/references/research.md.
 - Show commercial labels where the placement appears, not only in a footer.
 
 ## Authored implementation decisions
-- Primary: near-black for decisive actions. Secondary: pale green-neutral
-  surfaces. Accent: the logo-sampled Money Sense green (`#19906d`) for focused
+- Primary: near-black for decisive actions. Secondary and separators: silver
+  gray. Accent: the logo-sampled Money Sense green (`#19906d`) for focused
   actions and selected states.
-- Accent tones: signature `#19906d`; deep interaction tone `#117255`; quiet
-  surface `#e8f1ec`; barely tinted canvas `#f5fbf8`.
-- Use one signature green hue, with lighter/darker tints for states and
-  backgrounds; do not create competing brand accents. Keep warning, success,
-  error and chart series distinct because they carry separate meaning.
+- Accent tones: signature `#19906d`; deeper interaction tone `#117255`;
+  supporting lime `#c5e8a8`; silver gray `#c8cfcb`; quiet canvas `#f5f7f6`.
+- Keep logo green as the signature. Lime is a restrained secondary highlight,
+  not a replacement identity or a second equally weighted brand color. Use the
+  silver-gray family for dividers, neutral control states and data framing.
+  Keep warning, success, error and chart series distinct because they carry
+  separate meaning.
 - Prefer green surfaces with a dark-green foreground in the primary light/dark
   tokens; avoid white text on the exact logo green because it misses AA contrast.
 - For ambient moments, a subtle ink-to-brand-green gradient is allowed, but
@@ -41,7 +43,8 @@ templates to copy. See docs/references/research.md.
 - Do not use green alone to mean verified or suitable. Include explicit text.
 - White plate for the original logo in dark mode; never invert its colours.
 - Instrument Serif is a temporary open-source display substitute, not Denton.
-  DM Sans is UI/body; Geist Mono is for compact financial data.
+  DM Sans is UI/body; Space Grotesk is the compact utility face. It is
+  proportional, not monospaced; use tabular numerals only where alignment matters.
 - Supplied Denton Test files are not redistributed here as production fonts.
   Licensed Denton Condensed files and confirmation of web embedding rights are
   required before replacing the display token. Do not imply licensing is verified.

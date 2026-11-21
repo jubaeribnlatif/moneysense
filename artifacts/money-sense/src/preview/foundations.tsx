@@ -61,17 +61,17 @@ function Swatch({
 export function OverviewPage() {
   return (
     <div className="space-y-4">
-      <section className="relative isolate overflow-hidden rounded-2xl p-6 text-white shadow-xl sm:p-10" style={{ background: 'radial-gradient(ellipse at 84% 20%, rgba(25,144,109,.78), transparent 36%), linear-gradient(118deg, #101713 0%, #102c23 55%, #164b39 100%)' }}>
+      <section className="relative isolate overflow-hidden rounded-2xl p-6 text-white shadow-xl sm:p-10" style={{ background: 'radial-gradient(ellipse at 88% 16%, rgba(197,232,168,.27), transparent 22%), radial-gradient(ellipse at 84% 20%, rgba(25,144,109,.72), transparent 38%), linear-gradient(118deg, #101713 0%, #102c23 55%, #164b39 100%)' }}>
         <div aria-hidden="true" className="pointer-events-none absolute -right-14 -top-20 hidden h-80 w-80 rounded-full border border-white/15 sm:right-3 sm:top-4 sm:block">
           <div className="absolute inset-8 rounded-full border border-white/15" />
           <div className="absolute inset-16 rounded-full border border-white/15" />
           <div className="absolute bottom-9 left-4 right-4 h-24 -rotate-12 rounded-xl border border-white/25 bg-white/5 backdrop-blur-sm" />
           <div className="absolute bottom-16 left-10 right-10 h-1/2 rounded-xl border border-white/30 bg-gradient-to-br from-white/15 to-transparent" />
-          <span className="absolute right-20 top-20 h-3 w-3 rounded-full bg-accent shadow-[0_0_32px_rgba(141,214,181,.9)]" />
+          <span className="absolute right-20 top-20 h-3 w-3 rounded-full bg-[#c5e8a8] shadow-[0_0_32px_rgba(197,232,168,.9)]" />
         </div>
         <div className="relative max-w-2xl">
-          <div className="flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/65"><span>The Daily Star</span><span className="h-1 w-1 rounded-full bg-accent"/><span>Money Sense</span><span className="rounded-full border border-white/20 px-2 py-1 tracking-[0.12em]">Design system / 01</span></div>
-          <h2 className="mt-8 max-w-xl font-serif text-5xl leading-[.94] sm:text-7xl">Make your money<br/><span className="text-[#94d4b2]">make sense.</span></h2>
+          <div className="flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/65"><span>The Daily Star</span><span className="h-1 w-1 rounded-full bg-[#c5e8a8]"/><span>Money Sense</span><span className="rounded-full border border-white/20 px-2 py-1 tracking-[0.12em]">Design system / 01</span></div>
+          <h2 className="mt-8 max-w-xl font-serif text-5xl leading-[.94] sm:text-7xl">Make your money<br/><span className="text-[#c5e8a8]">make sense.</span></h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-white/75">Editorial credibility meets useful technology. A calmer way to discover financial products and everyday benefits.</p>
           <div className="mt-7 flex flex-wrap gap-2"><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Open to everyone</Badge><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Mobile first</Badge><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Audience before advertising</Badge></div>
         </div>
@@ -169,17 +169,18 @@ export function ColorsPage() {
 
       <section className="space-y-4 border-t pt-6">
         <div>
-          <h2 className="font-semibold">One signature green. Multiple useful tones.</h2>
+          <h2 className="font-semibold">A brand green, a lime spark, silver-gray structure.</h2>
           <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-            The logo green anchors the identity. Use a tonal family for hover, selected, and quiet surface states—not several unrelated brand accents.
+            Logo green anchors the identity; lime brings a brief moment of energy. Silver gray keeps the interface composed. Use lime selectively, not as a second primary brand color.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-5">
           {[
-            { name: 'Identity · logo sampled', hex: '#19906D', fg: '#0B3024' },
+            { name: 'Identity · logo sampled', hex: '#19906D', fg: '#03150F' },
+            { name: 'Lime · secondary pop', hex: '#C5E8A8', fg: '#17351E' },
             { name: 'Interaction · deeper', hex: '#117255', fg: '#FFFFFF' },
-            { name: 'Tint · soft surface', hex: '#E8F1EC', fg: '#151916' },
-            { name: 'Canvas · barely tinted', hex: '#F5FBF8', fg: '#151916' },
+            { name: 'Silver · neutral accent', hex: '#C8CFCB', fg: '#151916' },
+            { name: 'Canvas · cool neutral', hex: '#F5F7F6', fg: '#151916' },
           ].map((tone) => (
             <div key={tone.name} className="overflow-hidden rounded-xl border">
               <div className="flex h-24 items-end p-3 font-mono text-xs" style={{ backgroundColor: tone.hex, color: tone.fg }}>{tone.hex}</div>
@@ -218,13 +219,13 @@ export function FontsPage() {
         <h2 className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
           Font family
         </h2>
-        <p className="mt-4 text-4xl font-bold">The quick brown fox</p>
+        <p className="mt-4 font-mono text-4xl font-semibold tracking-tight">The quick brown fox</p>
         <p className="mt-2 text-sm text-muted-foreground">
-          DM Sans — UI and body. Instrument Serif — temporary editorial display substitute for Denton Condensed. Geist Mono — compact financial data.
+          DM Sans — UI and body. Instrument Serif — temporary editorial display substitute for Denton Condensed. Space Grotesk — utility labels and compact figures; it is proportional, not monospaced.
         </p>
         <p className="mt-3 rounded-lg bg-secondary p-4 text-sm">The supplied Denton Test OTFs are not included as production fonts. The intended brand heading remains licensed Denton Condensed; this preview uses an explicitly documented open-source substitute pending suitable font files.</p>
         <p className="mt-5 font-serif text-4xl">Make your money make sense.</p>
-        <p className="mt-4 font-mono text-lg">৳ 12,500.00 · 14.50% · 2026</p>
+        <p className="mt-4 font-mono text-lg tabular-nums tracking-tight">৳ 12,500.00 · 14.50% · 2026</p>
       </section>
 
       <section className="space-y-4 border-t pt-6">

@@ -20,16 +20,18 @@ black/white/navy), so those inferred colours were rejected. The user's
 black/white/green instruction overrides publisher-site accent colours.
 
 The supplied PNG is retained unchanged under logos/ and in public/. The
-signature accent is sampled from the supplied mark (dominant green near
-`#19906D`). A tonal scale is preferable to multiple competing brand accents;
-the logo's own pixels remain unchanged.
+signature green is sampled from the supplied mark (dominant green near
+`#19906D`). The original lime (`#C5E8A8`) remains a restrained secondary
+highlight, balanced by silver-gray neutral accents; the logo's own pixels
+remain unchanged.
 
 ## Assets and typography
 - Logo provenance: user-supplied Money Sense logo, previously staged in the
   mockup sandbox. Retained original raster, no redraw or recolouring.
 - Instrument Serif: Google Fonts, temporary display substitute.
 - DM Sans: Google Fonts, body/UI.
-- Geist Mono: Google Fonts, financial labels and numeric specimens.
+- Space Grotesk: Google Fonts, requested utility typeface. It is proportional,
+  so tabular numerals are used only when alignment matters.
 - Denton Test OTFs: excluded from this package pending licensed production
   Denton Condensed files. Substitution is explicit, not a brand redefinition.
 

@@ -7,16 +7,16 @@ export const tokens = {
     "light": {
       "background": "#ffffff",
       "foreground": "#151916",
-      "border": "#d6dcd7",
+      "border": "#c8cfcb",
       "card": "#ffffff",
       "cardForeground": "#0a0a0a",
       "popover": "#ffffff",
       "popoverForeground": "#0a0a0a",
       "primary": "#171717",
       "primaryForeground": "#fafafa",
-      "secondary": "#e8f1ec",
+      "secondary": "#e3e8e5",
       "secondaryForeground": "#171717",
-      "muted": "#f5f5f5",
+      "muted": "#f0f3f1",
       "mutedForeground": "#59625b",
       "accent": "#19906d",
       "accentForeground": "#03150f",
@@ -34,7 +34,7 @@ export const tokens = {
       "sidebarBorder": "#e5e5e5",
       "sidebarPrimary": "#171717",
       "sidebarPrimaryForeground": "#fafafa",
-      "sidebarAccent": "#edf2ed",
+      "sidebarAccent": "#e3e8e5",
       "sidebarAccentForeground": "#171717",
       "sidebarRing": "#171717"
     },
@@ -84,8 +84,8 @@ export const tokens = {
       "serif"
     ],
     "mono": [
-      "Geist Mono",
-      "monospace"
+      "Space Grotesk",
+      "sans-serif"
     ]
   },
   "radius": "0.75rem",
