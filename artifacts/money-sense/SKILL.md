@@ -21,8 +21,19 @@ templates to copy. See docs/references/research.md.
 - Show commercial labels where the placement appears, not only in a footer.
 
 ## Authored implementation decisions
-- Primary: near-black for decisive actions. Secondary: quiet green-neutral
-  surfaces. Accent: pale green for selected moments, not every section.
+- Primary: near-black for decisive actions. Secondary: pale green-neutral
+  surfaces. Accent: the logo-sampled Money Sense green (`#19906d`) for focused
+  actions and selected states.
+- Accent tones: signature `#19906d`; deep interaction tone `#117255`; quiet
+  surface `#e8f1ec`; barely tinted canvas `#f5fbf8`.
+- Use one signature green hue, with lighter/darker tints for states and
+  backgrounds; do not create competing brand accents. Keep warning, success,
+  error and chart series distinct because they carry separate meaning.
+- Prefer green surfaces with a dark-green foreground in the primary light/dark
+  tokens; avoid white text on the exact logo green because it misses AA contrast.
+- For ambient moments, a subtle ink-to-brand-green gradient is allowed, but
+  product information, fees and sponsored labels stay on solid, high-contrast
+  surfaces.
 - A 4px rhythm and 12px base radius support usable, restrained controls.
 - Use meaningful hover, selected, empty and focus states, not decorative motion
   that blocks discovery. Respect reduced-motion preferences.

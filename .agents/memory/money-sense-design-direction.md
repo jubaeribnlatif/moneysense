@@ -6,6 +6,10 @@ description: Standing audience and design-reference intent for Money Sense.
 Money Sense is for everyone, primarily educated and concerned readers. Balance
 technology-forward polish with familiar, mass-accessible controls.
 
+The signature green should follow the supplied Money Sense mark; use tonal
+variations of that green rather than unrelated competing brand accents. A
+restrained gradient may add depth without displacing black-and-white structure.
+
 **Why:** The user explicitly rejected the earlier designs and requested a fresh
 system inspired by CRED, NerdWallet, Credit Karma and The Daily Star, not a clone.
 

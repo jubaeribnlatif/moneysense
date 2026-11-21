@@ -19,9 +19,10 @@ conflicted with its rendered page (orange/generic values versus visible
 black/white/navy), so those inferred colours were rejected. The user's
 black/white/green instruction overrides publisher-site accent colours.
 
-The supplied PNG is retained unchanged under logos/ and in public/. The pale
-green UI accent is an authored complementary colour, not claimed as an exact
-sample from the logo. The logo's own pixels remain unchanged.
+The supplied PNG is retained unchanged under logos/ and in public/. The
+signature accent is sampled from the supplied mark (dominant green near
+`#19906D`). A tonal scale is preferable to multiple competing brand accents;
+the logo's own pixels remain unchanged.
 
 ## Assets and typography
 - Logo provenance: user-supplied Money Sense logo, previously staged in the

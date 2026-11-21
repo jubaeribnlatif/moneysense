@@ -61,11 +61,20 @@ function Swatch({
 export function OverviewPage() {
   return (
     <div className="space-y-4">
-      <section className="rounded-xl bg-primary p-6 text-primary-foreground sm:p-8">
-        <p className="text-xs uppercase tracking-widest">The Daily Star / Money Sense / Foundation 01</p>
-        <h2 className="mt-5 max-w-xl font-serif text-5xl sm:text-6xl">Make your money<br/><span className="rounded-md bg-accent px-2 text-accent-foreground">make sense.</span></h2>
-        <p className="mt-5 max-w-xl text-base opacity-80">Editorial credibility meets useful technology. A calmer way to discover financial products and everyday benefits.</p>
-        <div className="mt-6 flex flex-wrap gap-2"><Badge variant="secondary">Open to everyone</Badge><Badge variant="secondary">Mobile first</Badge><Badge variant="secondary">Audience before advertising</Badge></div>
+      <section className="relative isolate overflow-hidden rounded-2xl p-6 text-white shadow-xl sm:p-10" style={{ background: 'radial-gradient(ellipse at 84% 20%, rgba(25,144,109,.78), transparent 36%), linear-gradient(118deg, #101713 0%, #102c23 55%, #164b39 100%)' }}>
+        <div aria-hidden="true" className="pointer-events-none absolute -right-14 -top-20 hidden h-80 w-80 rounded-full border border-white/15 sm:right-3 sm:top-4 sm:block">
+          <div className="absolute inset-8 rounded-full border border-white/15" />
+          <div className="absolute inset-16 rounded-full border border-white/15" />
+          <div className="absolute bottom-9 left-4 right-4 h-24 -rotate-12 rounded-xl border border-white/25 bg-white/5 backdrop-blur-sm" />
+          <div className="absolute bottom-16 left-10 right-10 h-1/2 rounded-xl border border-white/30 bg-gradient-to-br from-white/15 to-transparent" />
+          <span className="absolute right-20 top-20 h-3 w-3 rounded-full bg-accent shadow-[0_0_32px_rgba(141,214,181,.9)]" />
+        </div>
+        <div className="relative max-w-2xl">
+          <div className="flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/65"><span>The Daily Star</span><span className="h-1 w-1 rounded-full bg-accent"/><span>Money Sense</span><span className="rounded-full border border-white/20 px-2 py-1 tracking-[0.12em]">Design system / 01</span></div>
+          <h2 className="mt-8 max-w-xl font-serif text-5xl leading-[.94] sm:text-7xl">Make your money<br/><span className="text-[#94d4b2]">make sense.</span></h2>
+          <p className="mt-6 max-w-md text-base leading-relaxed text-white/75">Editorial credibility meets useful technology. A calmer way to discover financial products and everyday benefits.</p>
+          <div className="mt-7 flex flex-wrap gap-2"><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Open to everyone</Badge><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Mobile first</Badge><Badge className="border border-white/15 bg-white/10 text-white hover:bg-white/10">Audience before advertising</Badge></div>
+        </div>
       </section>
       <Guidelines items={[{kind:'do',text:'Balance tech and mass-market design: professional, accessible and useful without being boring. — User brief'},{kind:'dont',text:'Give every homepage feature equal prominence or make the experience feel like an advertising page. — User brief'}]}/>
       <section className="rounded-xl border bg-card p-5 text-card-foreground">
@@ -155,6 +164,33 @@ export function ColorsPage() {
           {CORE_SWATCHES.map((swatch) => (
             <Swatch key={swatch.name} {...swatch} />
           ))}
+        </div>
+      </section>
+
+      <section className="space-y-4 border-t pt-6">
+        <div>
+          <h2 className="font-semibold">One signature green. Multiple useful tones.</h2>
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+            The logo green anchors the identity. Use a tonal family for hover, selected, and quiet surface states—not several unrelated brand accents.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {[
+            { name: 'Identity · logo sampled', hex: '#19906D', fg: '#0B3024' },
+            { name: 'Interaction · deeper', hex: '#117255', fg: '#FFFFFF' },
+            { name: 'Tint · soft surface', hex: '#E8F1EC', fg: '#151916' },
+            { name: 'Canvas · barely tinted', hex: '#F5FBF8', fg: '#151916' },
+          ].map((tone) => (
+            <div key={tone.name} className="overflow-hidden rounded-xl border">
+              <div className="flex h-24 items-end p-3 font-mono text-xs" style={{ backgroundColor: tone.hex, color: tone.fg }}>{tone.hex}</div>
+              <p className="p-3 text-xs font-medium">{tone.name}</p>
+            </div>
+          ))}
+        </div>
+        <div className="rounded-xl p-5 text-white" style={{ background: 'linear-gradient(110deg,#101713 0%,#164b39 68%,#19906d 100%)' }}>
+          <p className="text-[10px] font-semibold uppercase tracking-[.2em] text-white/65">Ambient gradient / editorial moment only</p>
+          <p className="mt-3 font-serif text-3xl">Adds depth without competing with the brand mark.</p>
+          <p className="mt-2 text-sm text-white/75">Keep decision details, prices, eligibility and paid labels on solid, high-contrast surfaces.</p>
         </div>
       </section>
 
