@@ -1,0 +1,19 @@
+kind = "design-system"
+previewPath = "/money-sense/"
+title = "Money Sense Design System"
+description = "An audience-first financial discovery design system for The Daily Star: editorial credibility, accessible decision tools, and clearly separated commercial visibility."
+version = "1.0.0"
+id = "artifacts/money-sense"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/money-sense/" ]
+localPort = 21044
+
+[services.development]
+run = "pnpm --filter @workspace/money-sense run dev"
+
+[services.env]
+PORT = "21044"
+BASE_PATH = "/money-sense/"
