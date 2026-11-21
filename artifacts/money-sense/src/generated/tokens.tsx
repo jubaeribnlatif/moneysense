@@ -24,7 +24,7 @@ export const tokens = {
       "destructiveForeground": "#fafafa",
       "input": "#778379",
       "ring": "#19906d",
-      "chart1": "#286b3f",
+      "chart1": "#c5e8a8",
       "chart2": "#397b88",
       "chart3": "#8c6222",
       "chart4": "#756496",

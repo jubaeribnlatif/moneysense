@@ -24,8 +24,10 @@ templates to copy. See docs/references/research.md.
 - Primary: near-black for decisive actions. Secondary and separators: silver
   gray. Accent: the logo-sampled Money Sense green (`#19906d`) for focused
   actions and selected states.
-- Accent tones: signature `#19906d`; deeper interaction tone `#117255`;
-  supporting lime `#c5e8a8`; silver gray `#c8cfcb`; quiet canvas `#f5f7f6`.
+- Accent tones: signature green `#19906d`; supporting lime `#c5e8a8` in light
+  mode and `#a5d98b` in dark mode (the `chart1` token); silver gray `#c8cfcb`.
+  Use the muted and secondary tokens for quiet surfaces rather than inventing
+  extra grays.
 - Keep logo green as the signature. Lime is a restrained secondary highlight,
   not a replacement identity or a second equally weighted brand color. Use the
   silver-gray family for dividers, neutral control states and data framing.
